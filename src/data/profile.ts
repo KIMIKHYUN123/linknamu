@@ -11,14 +11,13 @@ export type Profile = {
   links: LinkItem[];
 };
 
-// TODO: 실제 프로필 정보와 링크로 바꿔주세요.
 export const profile: Profile = {
-  name: "김클로",
-  bio: "세계 최강 바이브 코더",
-  imageUrl: "/profile.svg",
+  name: "김익현",
+  bio: "방구석 초보 개발자 | 반도체와 AI의 결합에 관심이 많아요",
+  imageUrl: "/profile-room-dev.svg",
   links: [
-    { id: "github", title: "GitHub", url: "https://github.com" },
-    { id: "linkedin", title: "LinkedIn", url: "https://www.linkedin.com" },
-    { id: "blog", title: "Blog", url: "https://velog.io" },
+    { id: "github", title: "🐙 GitHub", url: "https://github.com/KIMIKHYUN123" },
+    { id: "instagram", title: "📸 Instagram", url: "https://www.instagram.com/aristalies" },
+    { id: "email", title: "✉️ Email", url: "mailto:ighyun123@nate.com" },
   ],
 };

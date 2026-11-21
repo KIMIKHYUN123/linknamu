@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="방구석에서 노트북으로 코딩하는 초보 개발자 일러스트">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2f55"/>
+      <stop offset="1" stop-color="#3d3566"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f1a3d"/>
+      <stop offset="1" stop-color="#28407a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7fe3ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7fe3ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lamp" cx="0.5" cy="0" r="0.9">
+      <stop offset="0" stop-color="#ffd98a" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ffd98a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 방 벽 -->
+  <rect width="200" height="200" fill="url(#wall)"/>
+
+  <!-- 창문 (밤하늘) -->
+  <rect x="22" y="22" width="62" height="54" rx="4" fill="#1b1f3b"/>
+  <rect x="26" y="26" width="54" height="46" rx="2" fill="url(#sky)"/>
+  <circle cx="66" cy="38" r="7" fill="#fff4c2"/>
+  <circle cx="69" cy="36" r="6" fill="#203266"/>
+  <circle cx="36" cy="34" r="1.1" fill="#fff"/>
+  <circle cx="48" cy="44" r="0.9" fill="#fff"/>
+  <circle cx="40" cy="58" r="1" fill="#fff"/>
+  <circle cx="58" cy="62" r="0.8" fill="#fff"/>
+  <rect x="52" y="26" width="2" height="46" fill="#1b1f3b"/>
+  <rect x="26" y="48" width="54" height="2" fill="#1b1f3b"/>
+
+  <!-- 벽 선반 + 반도체 칩 장식 -->
+  <rect x="118" y="44" width="58" height="4" rx="1" fill="#8a6a4f"/>
+  <g transform="translate(126 26)">
+    <rect x="0" y="0" width="16" height="16" rx="2" fill="#2f3b4f"/>
+    <rect x="4" y="4" width="8" height="8" rx="1" fill="#7fe3ff"/>
+    <g fill="#c9d2df">
+      <rect x="-3" y="3" width="3" height="1.6"/><rect x="-3" y="7.2" width="3" height="1.6"/><rect x="-3" y="11.4" width="3" height="1.6"/>
+      <rect x="16" y="3" width="3" height="1.6"/><rect x="16" y="7.2" width="3" height="1.6"/><rect x="16" y="11.4" width="3" height="1.6"/>
+      <rect x="3" y="-3" width="1.6" height="3"/><rect x="7.2" y="-3" width="1.6" height="3"/><rect x="11.4" y="-3" width="1.6" height="3"/>
+      <rect x="3" y="16" width="1.6" height="3"/><rect x="7.2" y="16" width="1.6" height="3"/><rect x="11.4" y="16" width="1.6" height="3"/>
+    </g>
+  </g>
+  <!-- 선반 위 화분 -->
+  <rect x="156" y="34" width="12" height="10" rx="2" fill="#d9825b"/>
+  <path d="M162 34c-6-4-8-10-6-14 3 2 6 7 6 14zM162 34c5-4 8-10 6-15-3 3-6 8-6 15z" fill="#6cc48a"/>
+
+  <!-- 스탠드 조명 빛 -->
+  <path d="M150 80 L120 150 L190 150 Z" fill="url(#lamp)"/>
+  <rect x="164" y="70" width="3" height="58" fill="#4b4f6e"/>
+  <path d="M152 80 l10 -14 h10 l6 14 z" fill="#f2b84b"/>
+
+  <!-- 모니터/노트북 빛 -->
+  <circle cx="100" cy="132" r="60" fill="url(#glow)"/>
+
+  <!-- 사람: 후드티 몸통 -->
+  <path d="M56 200 c0-34 18-54 44-54 s44 20 44 54 z" fill="#5b8def"/>
+  <path d="M84 150 q16 12 32 0" stroke="#4673d6" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <line x1="94" y1="156" x2="92" y2="172" stroke="#e8eefc" stroke-width="2" stroke-linecap="round"/>
+  <line x1="106" y1="156" x2="108" y2="172" stroke="#e8eefc" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- 목 + 얼굴 -->
+  <rect x="92" y="132" width="16" height="16" rx="6" fill="#f2c7a5"/>
+  <ellipse cx="100" cy="112" rx="26" ry="28" fill="#f7d3b5"/>
+  <!-- 귀 -->
+  <ellipse cx="74" cy="114" rx="4.5" ry="6" fill="#f2c7a5"/>
+  <ellipse cx="126" cy="114" rx="4.5" ry="6" fill="#f2c7a5"/>
+  <!-- 헤드폰 -->
+  <path d="M72 108 q28 -46 56 0" stroke="#30344f" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- 머리카락 -->
+  <path d="M74 104 c-2-24 14-36 28-36 c16 0 28 10 26 34 c-6-8-14-12-22-12 c-4 6-14 10-24 8 c-4 0-6 3-8 6 z" fill="#2a2230"/>
+  <path d="M100 70 q6 -8 2 -14 q8 4 4 14 z" fill="#2a2230"/>
+  <!-- 헤드폰 이어컵 -->
+  <rect x="66" y="104" width="10" height="18" rx="4" fill="#3d4266"/>
+  <rect x="124" y="104" width="10" height="18" rx="4" fill="#3d4266"/>
+
+  <!-- 안경 -->
+  <g fill="#bfefff" fill-opacity="0.35" stroke="#2a2230" stroke-width="2.2">
+    <circle cx="89" cy="114" r="8"/>
+    <circle cx="111" cy="114" r="8"/>
+  </g>
+  <line x1="97" y1="114" x2="103" y2="114" stroke="#2a2230" stroke-width="2.2"/>
+  <!-- 눈 -->
+  <circle cx="89" cy="115" r="2.2" fill="#2a2230"/>
+  <circle cx="111" cy="115" r="2.2" fill="#2a2230"/>
+  <circle cx="89.8" cy="114.2" r="0.7" fill="#fff"/>
+  <circle cx="111.8" cy="114.2" r="0.7" fill="#fff"/>
+  <!-- 볼터치 + 입 -->
+  <ellipse cx="82" cy="126" rx="4" ry="2.4" fill="#f29b9b" opacity="0.6"/>
+  <ellipse cx="118" cy="126" rx="4" ry="2.4" fill="#f29b9b" opacity="0.6"/>
+  <path d="M95 128 q5 4 10 0" stroke="#8a4b3c" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- 땀방울 (초보 개발자의 긴장감) -->
+  <path d="M128 92 q4 6 0 9 q-4 -3 0 -9 z" fill="#9fd8ff"/>
+
+  <!-- 책상 -->
+  <rect x="0" y="168" width="200" height="32" fill="#8a6a4f"/>
+  <rect x="0" y="168" width="200" height="4" fill="#a3825f"/>
+
+  <!-- 노트북 -->
+  <path d="M60 170 h80 l8 8 h-96 z" fill="#c9d2df"/>
+  <rect x="66" y="140" width="68" height="30" rx="3" fill="#3a4158"/>
+  <rect x="69" y="143" width="62" height="24" rx="1.5" fill="#0f172a"/>
+  <!-- 화면 속 코드 -->
+  <rect x="72" y="146" width="14" height="2.4" rx="1" fill="#f78fb3"/>
+  <rect x="88" y="146" width="20" height="2.4" rx="1" fill="#7fe3ff"/>
+  <rect x="76" y="151" width="24" height="2.4" rx="1" fill="#a6e3a1"/>
+  <rect x="102" y="151" width="10" height="2.4" rx="1" fill="#f9e2af"/>
+  <rect x="76" y="156" width="16" height="2.4" rx="1" fill="#7fe3ff"/>
+  <rect x="94" y="156" width="22" height="2.4" rx="1" fill="#cba6f7"/>
+  <rect x="72" y="161" width="8" height="2.4" rx="1" fill="#f78fb3"/>
+  <rect x="82" y="161" width="3" height="3" fill="#ffffff"/>
+
+  <!-- 머그컵 -->
+  <rect x="150" y="156" width="16" height="16" rx="3" fill="#f2f2f2"/>
+  <path d="M166 160 q7 0 7 5 t-7 5" stroke="#f2f2f2" stroke-width="2.5" fill="none"/>
+  <rect x="150" y="160" width="16" height="3" fill="#5b8def"/>
+  <path d="M154 150 q-3 -4 0 -8 M160 150 q-3 -4 0 -8" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <!-- 포스트잇 -->
+  <rect x="26" y="150" width="18" height="18" rx="1" fill="#ffe27a" transform="rotate(-8 35 159)"/>
+  <rect x="29" y="155" width="11" height="1.6" fill="#c9a83a" transform="rotate(-8 35 159)"/>
+  <rect x="29" y="159" width="8" height="1.6" fill="#c9a83a" transform="rotate(-8 35 159)"/>
+</svg>
