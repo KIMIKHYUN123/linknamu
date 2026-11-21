@@ -1,5 +1,4 @@
-import EmailCard from "@/components/EmailCard";
-import LinkCard from "@/components/LinkCard";
+import LinkList from "@/components/LinkList";
 import ProfileHeader from "@/components/ProfileHeader";
 import { profile } from "@/data/profile";
 
@@ -9,17 +8,7 @@ export default function Home() {
     <main className="flex flex-1 justify-center px-6 pt-20 pb-16 sm:px-8 sm:pt-24">
       <div className="w-full max-w-[26rem]">
         <ProfileHeader name={profile.name} bio={profile.bio} imageUrl={profile.imageUrl} />
-        <ul className="mt-12 flex flex-col gap-4 sm:mt-14 sm:gap-5">
-          {profile.links.map((link) => (
-            <li key={link.id}>
-              {link.url.startsWith("mailto:") ? (
-                <EmailCard title={link.title} url={link.url} />
-              ) : (
-                <LinkCard title={link.title} url={link.url} />
-              )}
-            </li>
-          ))}
-        </ul>
+        <LinkList links={profile.links} />
       </div>
     </main>
   );
