@@ -11,7 +11,7 @@
   --bg-bottom: #f8ebdf; /* 아래쪽으로 갈수록 살구빛이 살짝 도는 따뜻한 톤 */
   --glow-a: rgba(255, 222, 196, 0.55);
   --glow-b: rgba(168, 212, 245, 0.6);
-}
+}
 
 /* 다크 모드: 같은 분위기의 해 질 녘 하늘 */
 @media (prefers-color-scheme: dark) {
